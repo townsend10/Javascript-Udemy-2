@@ -24,3 +24,4 @@ for(let a in nums){
         console.log(`\nPar = ${a},${b}\t`,)
     }
 }
+gg
