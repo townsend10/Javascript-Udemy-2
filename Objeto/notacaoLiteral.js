@@ -12,3 +12,4 @@ const nomeDaPessoa = 'Alfredo'
 const obj3 = {}
 obj3[nomeDaPessoa]=novaNota
 console.log(obj3)
+a
