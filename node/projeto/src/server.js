@@ -1,4 +1,4 @@
-const porta = 3003
+const porta = 3005
 
 const express = require('express')
 
@@ -17,6 +17,7 @@ app.get('/produtos',(req, res, next)=>{
 
 app.get('/produtos/:id', (req,res,next)=>{
     res.send(bancoDedDados.getProduto(req.params.id))
+   
 })
 
 app.post('/produtos', (req, res, next)=>{ 
@@ -44,6 +45,6 @@ app.delete('/produtos/:id', (req,res,next)=>{
 })
 
 app.listen(porta, ()=>{
-    console.log(`Servidor esta executando na ${porta}. `)
+    console.log(`Servidor esta executando na porta: ${porta}. `)
 
 })
